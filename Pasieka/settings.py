@@ -36,7 +36,7 @@ SECRET_KEY_FALLBACKS = [
 #DEBUG = False
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['Ewa72.pythonanywhere.com','*']
 
 
 # Application definition
@@ -172,3 +172,5 @@ STORAGES = {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },
 }
+
+CSRF_TRUSTED_ORIGINS = ['https://Ewa72.pythonanywhere.com']
