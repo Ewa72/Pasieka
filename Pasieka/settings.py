@@ -160,6 +160,7 @@ if 'DATABASE_URL' in os.environ:
 
 # The absolute path to the directory where collectstatic will collect static files for deployment.
 #STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 # for Pythonanywhere deployment
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
