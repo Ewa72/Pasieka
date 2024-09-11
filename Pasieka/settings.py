@@ -158,13 +158,5 @@ if 'DATABASE_URL' in os.environ:
     )
     
 
-# Static file serving.
-# https://whitenoise.readthedocs.io/en/stable/django.html#add-compression-and-caching-support
-#STORAGES = {
-    # ...
- #   "staticfiles": {
-  #      "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
-   # },
-#}
 
 CSRF_TRUSTED_ORIGINS = ['https://Ewa72.pythonanywhere.com']
