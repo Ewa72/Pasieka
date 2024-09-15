@@ -134,7 +134,8 @@ USE_TZ = True
 #STATIC_ROOT = BASE_DIR / 'static'
 
 # for serving static file on Pythonanywhere
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
+#STATIC_ROOT = os.path.join(BASE_DIR, "static")
+STATIC_ROOT = "/home/Ewa72/ewa72.pythonanywhere.com/static"
 # The URL to use when referring to static files (where they will be served from)
 STATIC_URL = '/static/'
 
