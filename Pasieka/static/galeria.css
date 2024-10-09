@@ -19,3 +19,8 @@ div.scroll-container img {
     height: 600px;
     width: 600px;
 }
+
+.fit-picturePr {
+    height: 75px;
+    width: 75px;
+}
