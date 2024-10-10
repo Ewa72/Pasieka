@@ -22,7 +22,8 @@
   {% for miod in mymiody %}
   <div class="scroll-container">
   <h4>{{ miod.rodzaj }}</h4>
-  <img  src="{{ miod.foto.url }}">
+  <img  src="{ miod.foto.url }">
+     <!--format_html('<img src="{}" style="max-width:200px; max-height:200px"/>'.format(obj.foto.url))-->
     <!--<img class="fit-picturePr" src="{{ miod.foto.url }}"> -->
     <a>{{ miod.opis }}</a>
     </div>
