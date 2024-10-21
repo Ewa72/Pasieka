@@ -4,7 +4,7 @@ from django.db import models
 class Miody(models.Model):
     rodzaj = models.CharField(max_length=255)
     opis = models.TextField(max_length=1000, help_text="Krótka charakterystyka typu miodu") # dla dłuższych opisów
-    foto = models.ImageField(upload_to = 'miody')
+    miody_foto = models.ImageField(upload_to = 'miody_foto')
     
 def __str__(self):
-    return f"{self.rodzaj} {self.opis} {self.foto}"    
+    return f"{self.rodzaj} {self.opis} {self.miody_foto}"    

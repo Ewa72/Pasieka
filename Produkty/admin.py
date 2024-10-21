@@ -10,11 +10,11 @@ from django.utils.html import format_html # do wyswietlenia foto
 class MiodyAdmin(admin.ModelAdmin):
  
    def image_tag(self, obj):
-       return format_html('<img src="{}" style="max-width:200px; max-height:200px"/>'.format(obj.foto.url)) # wyswietlane zdj miodu
+       return format_html('<img src="{}" style="max-width:200px; max-height:200px"/>'.format(obj.miody_foto.url)) # wyswietlane zdj miodu
    
-   image_tag.short_description = 'foto'
+   image_tag.short_description = 'miody_foto'
    
-   list_display = ("rodzaj", "opis", "foto", 'image_tag',)
+   list_display = ("rodzaj", "opis", "miody_foto", 'image_tag',)
     
     
   
