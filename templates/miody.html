@@ -22,8 +22,7 @@
   {% for miod in mymiody %}
   <div class="scroll-container">
   <h4>{{ miod.rodzaj }}</h4>
-  <img  src="{{ miod.miody_foto.url }}">
-    <!--<img class="fit-picturePr" src="{{ miod.miody_foto.url }}"> -->
+    <img class="fit-picturePr" src="{{ miod.miody_foto.url }}">
     <a>{{ miod.opis }}</a>
     </div>
   {% endfor %}
