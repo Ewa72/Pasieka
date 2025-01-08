@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+ <!-- <html lang="pl"> -->
+ <html> 
+
+<head>
+    <meta charset="utf-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   
+      
+    <title>{% block title %}Pasieka nad jeziorem{% endblock %}</title>
+     <link href="{% static "main.css" %}" rel="stylesheet">      
+     
+ </head>
+
+<body>
+
+<div class="container-fluid">
+<!-- 1. row -->
+<div class="row">                        
+        <a href="/" class="logo"> Pasieka nad Jeziorem  </a>                                        
+    </div>
+    
+<!-- 2. row -->    
+<div class="row">
+
+    <div class="col-xs-6 col-sm-4 col-lg-2">          <!-- "col-sm-3">-->  
+  <!--     <div class="col">-->
+         <img class="fit-picture" src="{% static "logo3.gif" %}" alt="Pasieka nad Jeziorem">
+  
+  <!-- {% for miod in mymiody %}
+    <img class="fit-picture" src="{{miod.miody_foto.url}}"> 
+    <h3>{{miod.miody_foto}}</h3>
+    <h3>{{miod.miody_foto.name}}</h3>
+
+  {% endfor %} -->
+    
+</div> <!-- col -->
+
+  <div class="col-xs-6 col-sm-8 col-lg-10">   <!--   "col-sm-9">--> 
+  
+  <div class="btn-group btn-group-justified">
+  <a href="#" class="btn btn-lg dropdown-toggle" data-toggle="dropdown">Nasze produkty<span class="caret"></span></a>
+  <ul class="dropdown-menu">
+      <li><a href="miody">Miody</a></li> 
+    <!--<li><a href="{% url 'miody' %}">Miody</a></li> -->
+    <li><a href="#">Świece</a></li>
+    <li><a href="#">Zestawy prezentowe</a></li>
+  </ul>
+  <a href= "myfirst.html"  class="btn btn-lg" >O nas</a>
+  <a href="galeria" class="btn btn-lg">Galeria</a><!--galeria - name of urls from apps url -->
+  <a href="#" class="btn btn-lg">Kontakt</a>
+    <a href="#" class="btn btn-lg thick">Sklep</a>
+</div><!-- button -->
+   
+   </div><!-- col -->
+   
+   </div><!-- row -->
+  
+  <!-- 3. row --> 
+   <div class="row"> 
+         <img class="bottom-picture" src="{% static "ule.jpg" %}">       
+   </div>
+   
+  
+   
+   </div><!-- container -->
+    
+   
+   
+</body>
+
+   
+
+</html>

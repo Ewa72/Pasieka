@@ -1,0 +1,21 @@
+from django.db import models
+
+# Create your models here.
+class Miody(models.Model):
+    rodzaj = models.CharField(max_length=255)
+    opis = models.TextField(max_length=1000, help_text="Krótka charakterystyka typu miodu") # dla dłuższych opisów
+    miody_foto = models.ImageField(upload_to = 'miody_foto', blank=True, null=True, default='default.jpg')
+ 
+ # do usuniecia   
+#    @property
+ #   def image_url(self):
+  #      if self.miody_foto and hasattr(self.miody_foto, 'url'):
+   #         return self.miody_foto.url
+        
+def miody_foto_tag(self):
+        return mark_safe('<img src="{}" height="50"/>'.format(self.miody_foto.url))
+    miody_foto_tag.short_description = 'Image'
+
+def __str__(self):
+    return f"{self.rodzaj} {self.opis} {self.miody_foto}"    
+
