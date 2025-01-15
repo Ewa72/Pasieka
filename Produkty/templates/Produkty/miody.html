@@ -19,26 +19,13 @@
 
 <body>
 
- <h1> dupa dupa  </h1>
 
   {% for miod in mymiody %}
   <div class="scroll-container">
   <h4>{{ miod.rodzaj }}</h4>
-  {% if miod.miody_foto %}
-      <img class="fit-picturePr" src="{{miod.miody_foto.url}}"> 
-   {% else %}  
-      <h1> dupa dupa  </h1>
-   {% endif %}    
-<!--    <img src="{% if miod.miody_foto %}{{ miod.miody_foto.url }}{% else %}
-     {% static "z3.jpg" %}{% endif %}"> -->
+      <img class="fit-picturePr" src="{{miod.miody_foto.url}}">     
     <a>{{ miod.opis }}</a>
     </div>
-    <h3>{{miod.miody_foto}}</h3>
-    <h3>{{miod.miody_foto.name}}</h3>
-    <h3>{{miod.miody_foto.url}}</h3>
-    <h3>{{miod.miody_foto.path}}</h3>
-    <h3>{{miod.miody_foto.height_field}}</h3>
-    <h3>{{miod.miody_foto.height}}</h3>
   {% endfor %}
 <img src="{{miod.miody_foto.url}}">
 </body>

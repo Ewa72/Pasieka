@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from .models import Miody
 
 def miody(request):
-    mymiody = Miody.objects.all().values()
+    mymiody = Miody.objects.all()#Miody.objects.all().values()
     template = loader.get_template('Produkty/miody.html')
     context = {
         'mymiody': mymiody,
