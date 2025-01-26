@@ -145,6 +145,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# Update database configuration from $DATABASE_URL environment variable (if defined)
 import dj_database_url
 
 if 'DATABASE_URL' in os.environ:
