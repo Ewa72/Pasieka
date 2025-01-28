@@ -21,14 +21,12 @@
 
 
   {% for miod in mymiody %}
-  	<div class="scroll-container">
-  		<h4>{{ miod.rodzaj }}</h4>
-      	<img class="fit-picturePr" src="{{miod.miody_foto.url}}">     
+  <div class="scroll-container">
+  <h4>{{ miod.rodzaj }}</h4>
+      <img class="fit-picturePr" src="{{miod.miody_foto.url}}">     
+    <a>{{ miod.opis }}</a>
     </div>
   {% endfor %}
-  
-  
+<img src="{{miod.miody_foto.url}}">
 </body>
 </html> 
-
-    <a>{{ miod.opis }}</a>
