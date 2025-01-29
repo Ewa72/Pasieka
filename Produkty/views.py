@@ -10,3 +10,6 @@ def miody(request):
         'mymiody': mymiody,
         }
     return HttpResponse(template.render(context, request))
+
+class MiodyDetailView(generic.DetailView):
+    model = Miody
