@@ -2,7 +2,6 @@ from django.shortcuts import render
 from django.template import loader
 from django.http import HttpResponse
 from .models import Miody
-from django.views.generic.detail import DetailView
 
 def miody(request):
     mymiody = Miody.objects.all()#Miody.objects.all().values()
@@ -12,5 +11,5 @@ def miody(request):
         }
     return HttpResponse(template.render(context, request))
 
-class MiodyDetailView(DetailView):
+class MiodyDetailView(generic.DetailView):
     model = Miody
