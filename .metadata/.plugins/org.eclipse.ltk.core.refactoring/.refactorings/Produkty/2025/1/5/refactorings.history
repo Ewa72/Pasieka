@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Produkty/templates/Produkty/miody.html&apos; to &apos;miody_list.html&apos;" description="Rename resource &apos;miody.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="templates/Produkty/miody.html" name="miody_list.html" stamp="1738242410540" updateReferences="true"/>
+</session>
