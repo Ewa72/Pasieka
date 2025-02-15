@@ -23,11 +23,12 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('', include('Pasieka.urls')),
-    path('', include('Galeria.urls')),
-   # path('Produkty/', include('Produkty.urls')),
+    path('galeria/', include('Galeria.urls')),
+    #path('galeria/', include('Produkty.urls')),
+    #path('produkty/', include('Produkty.urls')),
     path('', include('Produkty.urls')),
     path('admin/', admin.site.urls),
-]#+ static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+]
 if settings.DEBUG: 
     urlpatterns += static(settings.MEDIA_URL,
                           document_root=settings.MEDIA_ROOT)

@@ -2,9 +2,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    #path('miody/', views.miody, name='miody'),
-   # path('Produkty/miody/', views.miody, name='miody'),
-   # path('miody/', views.miody, name='miody'),
-    #path('miod/<int:pk>',views.MiodyDetailView.as_view(), name='miod-detail'),
-    path('miody/', views.MiodyListView.as_view(), name='miody'),
+    path('miody/', views.miody, name='miody'),
+    path('miody/miod_details/<int:id>', views.miod_details, name='miod_details'),
+ #   path('miody/', views.MiodyListView.as_view(), name='miody'),
 ]

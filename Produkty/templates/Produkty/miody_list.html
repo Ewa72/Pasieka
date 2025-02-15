@@ -1,10 +1,9 @@
-{% extends "main.html" %}
+{% extends "Pasieka/main.html" %}
 
 {% block content %}  
 
-  {% for miod in miody_list %}
+  {% for miod in mymiody %}
   	<div class="scroll-container">
-  		<h4>{{ miod.rodzaj }}</h4>
       	<a href="{{ miod.get_absolute_url }}"> <img class="fit-picturePr" src="{{miod.miody_foto.url}}"> {{ miod.rodzaj }}</a>      
     </div>
   {% endfor %}

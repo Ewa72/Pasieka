@@ -22,7 +22,7 @@ from . import views
 
 
 urlpatterns = [
-    path("", views.pasieka, name="pasieka"),
+    path('', views.pasieka, name='pasieka'),
     #path('', views.pasieka, name='pasieka' ),
     #path('', include('Galeria.urls')),
     #path('', include('Produkty.urls')),
